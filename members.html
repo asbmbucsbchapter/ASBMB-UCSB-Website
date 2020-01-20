@@ -19,28 +19,7 @@
 	<link href="https://use.fontawesome.com/releases/v5.0.7/css/solid.css" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.7/js/solid.js" rel="stylesheet">
 	<script src="https://use.edgefonts.net/source-sans-pro:n4,i4,n6.js"></script>
-
-    <script type="text/javascript">
-            var picPaths = ['Images/Agilent_Banner.png','Images/SciTrek_Volunteers.png', 'Images/ASBMB_Meeting.png'];
-            var curPic = -1;
-            //preload the images for smooth animation
-            var imgO = new Array();
-            for(i=0; i < picPaths.length; i++) {
-                imgO[i] = new Image();
-                imgO[i].src = picPaths[i];
-            }
-
-            function swapImage() {
-                curPic = (++curPic > picPaths.length-1)? 0 : curPic;
-                imgCont.src = imgO[curPic].src;
-                setTimeout(swapImage,10000);
-            }
-
-            window.onload=function() {
-                imgCont = document.getElementById('Banner');
-                swapImage();
-            }
-    </script>
+    <script src="rot_img.js"></script>
 </head>
 
 <body>
@@ -150,7 +129,8 @@
                                 <div class="member-text">
                                     College of Creative Studies<br>
                                     B.S. Chemistry and Biochemistry<br>
-                                    2020
+                                    2020<br><br>
+                                    <a id="button" href="https://www.linkedin.com/in/heathermacgregor/"><i class="fab fa-linkedin-in"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -222,6 +202,7 @@
                             <img src="Images/Members/Patrick_McAlpine.png" height="150px" alt="Avatar" class="member-image">
                             <div class="member-overlay">
                                 <div class="member-text">
+                                    <h4 title="Founding Member">Patrick McAlpine* | Fundraising Committee</h4>
                                     <p>
                                         Patrick McAlpine is a fourth year Biology, B.S. student at the University of California, Santa Barbara. He has a certificate in technology management and has interned in the functional genomics lab Dr. Aza-Blanc at the Sanford Burnham Prebys Medical Discovery Institute. He currently works in the cell biology lab of Dr. Dzokai Ma here at UCSB.
                                     </p>
@@ -229,33 +210,25 @@
                             </div>
                         </div>
                     </td>
-                    <td id="member-desc">
-                        <h4 title="Founding Member">Patrick McAlpine* | Fundraising Committee</h4>
-                    </td></tr></table>
-            <table>
-                <tr>
-                    <td id="member-desc">
-                        <h4 title="Founding Member">Ben Lewis* | Fundraising Committee</h4>
-                    </td>
                     <td id="member-image">
                         <div class="member-container">
                             <img src="Images/Members/Ben_Lewis.png" height="150px" alt="Avatar" class="member-image">
                             <div class="member-overlay">
                                 <div class="member-text">
+                                    <h4 title="Founding Member">Ben Lewis* | Fundraising Committee</h4>
                                     <p>
                                         Ben Lewis is a third-year Chemistry/Biochemistry major from San Jose in the College of Creative Studies. Not currently in a research group, he is interested in drug design and metabolism, and hopes to one day change the world through a groundbreaking discovery. In his free time, Ben enjoys playing, discussing, and watching sports as well as studying philosophy.
                                     </p>
                                 </div>
                             </div>
                         </div>
-                    </td></tr></table>
-            <table>
-                <tr>
+                    </td>
                     <td id="member-image">
                         <div class="member-container">
                             <img src="Images/Members/Kord_Boniadi.png" height="150px" alt="Avatar" class="member-image">
                             <div class="member-overlay">
                                 <div class="member-text">
+                                     <h4>Kord Boniadi</h4>
                                     <p>
                                         Kord Boniadi is a California native raised in Laguna Niguel. He is an undergraduate at UCSB majoring in Biochemistry. He currently holds certification as an EMR and is pursuing his EMTs. He’s worked as a dental assistant in a private practice and spends most of his summers protecting the beaches as an OC lifeguard. His future goal is to the pursue a career in medicine. On his free time he enjoys playing the piano and violin; and, when the swell is good, surf with friends.
                                     </p>
@@ -263,35 +236,28 @@
                             </div>
                         </div>
                     </td>
-                    <td id="member-desc">
-                        <h4>Kord Boniadi</h4>
-                    </td></tr></table>
-            <table>
-                <tr>
-                    <td id="member-desc">
-                        <h4 title="Founding Member">Loc Ngo*</h4>
-                    </td>
                     <td id="member-image">
                         <div class="member-container">
                             <img src="Images/Members/Loc_Ngo.png" alt="Avatar" height="150px" class="member-image">
                             <div class="member-overlay">
                                 <div class="member-text">
+                                     <h4 title="Founding Member">Loc Ngo*</h4>
                                     <p>
                                         Loc is an international student from Vietnam. He is pursuing a career path in the field of chemistry. Loc is an undergraduate lab assistant for Jacob, a graduate student in Professor Ford's research group. Loc really misses Vietnamese food because there is not one single decent Vietnamese restaurant in Isla Vista, where he currently lives.
                                     </p>
                                 </div>
                             </div>
                         </div>
-                    </td>
-                    </tr>
-            </table>
+                    </td></tr></table>
             <table>
-                <tr>
+                    <tr>
                     <td id="member-image">
                         <div class="member-container">
                             <img src="Images/Members/Eden_Lukach_Romm.jpg" height="150px" alt="Avatar" class="member-image">
                             <div class="member-overlay">
                                 <div class="member-text">
+                                    <h4 title="Founding Member">Eden Lukach Romm*</h4>
+                                    <h4>Former President</h4>
                                     <p>
                                         Eden Lukach Romm is a Senior Undergraduate Chemistry B.S. student at the University of California, Santa Barbara. He used to live in San Diego, California before moving to Santa Barbara in pursuit of his education. Eden is involved in off-campus research using artificial intelligence techniques to illuminate possible treatments for diseases like Alzheimer’s and various cancers. His favorite extracurricular activities include playing basketball, video games, and trying new foods.
                                     </p>
@@ -299,10 +265,9 @@
                             </div>
                         </div>
                     </td>
-                    <td id="member-desc">
-                        <h4 title="Founding Member">Eden Lukach Romm*</h4>
-                        <h4>Former President</h4>
-                    </td>
+                        <td id="member-image"></td>
+                        <td id="member-image"></td>
+                        <td id="member-image"></td>
                 </tr></table>
                 <br><br><br>
                 Are you a current member and want to be featured? Fill out our <a href="https://forms.gle/gXqyvaZxd5dZfzMM7">form</a> or <a href="mailto:asbmbucsbchapter@gmail.com">contact us</a>.
@@ -310,12 +275,12 @@
     </div>
 </div>
 
-<div id="container-r">
-    <div id="nav-3">
-        <img id="Banner" src="" alt="" width="87.5%">
+<div id="container-r"><div id="nav-3">
+    <a href=""><img src="Images/Agilent_Banner.png" id="imgBanner" alt="banner image" width="87.5%"></a>
+    <div width="87.5%">
         <iframe src="https://calendar.google.com/calendar/b/3/embed?height=350&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;src=YXNibWJ1Y3NiY2hhcHRlckBnbWFpbC5jb20&amp;color=%23A87070&amp;showNav=0&amp;showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0" style="border-width:0" width="350" height="350" frameborder="0" scrolling="no"></iframe>
     </div>
-</div>
+</div></div>
 
 <div id="logo">
     <img src="Images/ASBMB-at-UCSB-Transparent.png" height="100%" title="Nice">
@@ -326,17 +291,25 @@
 
 
 <div id="links">
-    <a id="button" href="/"><i class="fas fa-home"></i> Home</a>
-    <a id="button" style="background-color: hsla(0, 0%, 89%, 1);" href="/members.html"><i class="fas fa-users"></i> Members</a>
-    <a id="button" href="/events.html"><i class="fas fa-calendar"></i> Events</a>
-    <a id="button" href="https://www.asbmb.org/membertypes/"><i class="fas fa-user-plus"></i> Sign Up</a>
+    <a id="button" href="https://www.facebook.com/pg/asbmbucsb/ads/"><i class="fab fa-facebook-f"></i></a>
+    <a id="button" href="https://www.linkedin.com/company/asbmb-ucsb/about/"><i class="fab fa-linkedin-in"></i></a>
+    <a id="button" href="https://www.instagram.com/ucsbasbmb/"><i class="fab fa-instagram"></i></a>
+    <table style="float:right;"><tr>
+            <td width="1em"><a id="button" href="/index.html"><i class="fas fa-home"></i></a></td>
+            <td width="0.5%"><a id="button" href="/index.html">Home</a></td>
+            <td width="1em"><a id="button" href="/events.html"><i class="fas fa-calendar"></i></a></td>
+            <td width="0.5%"><a id="button" href="/events.html">Events</a></td>
+            <td width="1em"><a id="button" style="background-color: hsla(0, 0%, 89%, 1);" href="/members.html"><i class="fas fa-users"></i></a></td>
+            <td width="0.5%"><a id="button" style="background-color: hsla(0, 0%, 89%, 1);" href="/members.html">Members</a></td>
+            <td width="1em"><a id="button" href="https://www.asbmb.org/membertypes/"><i class="fas fa-user-plus"></i></a></td>
+            <td width="0.5%"><a id="button" href="https://www.asbmb.org/membertypes/">Renew Membership</a></td>
+            <td><i class="fab fa-creative-commons-by"></i></td>
+    </tr></table>
 </div>
 
 <div id="logo">
     <img src="Images/ASBMB-at-UCSB-Transparent.png" height="99%">
 </div>
-
-
 
 </body>
 </html>

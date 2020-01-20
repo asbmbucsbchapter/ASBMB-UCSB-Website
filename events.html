@@ -19,27 +19,7 @@
 	<link href="https://use.fontawesome.com/releases/v5.0.7/css/solid.css" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.7/js/solid.js" rel="stylesheet">
 	<script src="https://use.edgefonts.net/source-sans-pro:n4,i4,n6.js"></script>
-    <script type="text/javascript">
-            var picPaths = ['Images/Agilent_Banner.png','Images/SciTrek_Volunteers.png', 'Images/ASBMB_Meeting.png'];
-            var curPic = -1;
-            //preload the images for smooth animation
-            var imgO = new Array();
-            for(i=0; i < picPaths.length; i++) {
-                imgO[i] = new Image();
-                imgO[i].src = picPaths[i];
-            }
-
-            function swapImage() {
-                curPic = (++curPic > picPaths.length-1)? 0 : curPic;
-                imgCont.src = imgO[curPic].src;
-                setTimeout(swapImage,10000);
-            }
-
-            window.onload=function() {
-                imgCont = document.getElementById('Banner');
-                swapImage();
-            }
-    </script>
+    <script src="rot_img.js"></script>
 
 </head>
 
@@ -71,7 +51,7 @@
                 <tr>
                     <td width="49.5%">
                         <div class="member-container">
-                            <img src="Images/Events/Volunteer_Poster_Draft.png" class="member-image">
+                            <img src="Images/Events/Agilent_Poster.png" class="member-image">
                             <div class="member-overlay">
                                 <div class="member-text">
                                     <h2>UNDER CONSTRUCTION</h2>
@@ -125,12 +105,12 @@
     </div>
 </div>
 
-<div id="container-r">
-    <div id="nav-3">
-        <img id="Banner" src="" alt="" width="87.5%">
+<div id="container-r"><div id="nav-3">
+    <a href=""><img src="Images/Agilent_Banner.png" id="imgBanner" alt="banner image" width="87.5%"></a>
+    <div width="87.5%">
         <iframe src="https://calendar.google.com/calendar/b/3/embed?height=350&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;src=YXNibWJ1Y3NiY2hhcHRlckBnbWFpbC5jb20&amp;color=%23A87070&amp;showNav=0&amp;showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0" style="border-width:0" width="350" height="350" frameborder="0" scrolling="no"></iframe>
     </div>
-</div>
+</div></div>
 
 <div id="logo">
     <img src="Images/ASBMB-at-UCSB-Transparent.png" height="100%" title="Nice">
@@ -139,12 +119,21 @@
 <div id="bar">
 </div>
 
-
 <div id="links">
-    <a id="button" href="/"><i class="fas fa-home"></i> Home</a>
-    <a id="button" style="background-color: hsla(0, 0%, 89%, 1);" href="/members.html"><i class="fas fa-users"></i> Members</a>
-    <a id="button" href="/events.html"><i class="fas fa-calendar"></i> Events</a>
-    <a id="button" href="https://www.asbmb.org/membertypes/"><i class="fas fa-user-plus"></i> Sign Up</a>
+    <a id="button" href="https://www.facebook.com/pg/asbmbucsb/ads/"><i class="fab fa-facebook-f"></i></a>
+    <a id="button" href="https://www.linkedin.com/company/asbmb-ucsb/about/"><i class="fab fa-linkedin-in"></i></a>
+    <a id="button" href="https://www.instagram.com/ucsbasbmb/"><i class="fab fa-instagram"></i></a>
+    <table style="float:right;"><tr>
+            <td width="1em"><a id="button" href="/index.html"><i class="fas fa-home"></i></a></td>
+            <td width="0.5%"><a id="button" href="/index.html">Home</a></td>
+            <td width="1em"><a id="button" href="/events.html"><i class="fas fa-calendar"></i></a></td>
+            <td width="0.5%"><a id="button" href="/events.html">Events</a></td>
+            <td width="1em"><a id="button" style="background-color: hsla(0, 0%, 89%, 1);" href="/members.html"><i class="fas fa-users"></i></a></td>
+            <td width="0.5%"><a id="button" style="background-color: hsla(0, 0%, 89%, 1);" href="/members.html">Members</a></td>
+            <td width="1em"><a id="button" href="https://www.asbmb.org/membertypes/"><i class="fas fa-user-plus"></i></a></td>
+            <td width="0.5%"><a id="button" href="https://www.asbmb.org/membertypes/">Renew Membership</a></td>
+            <td><i class="fab fa-creative-commons-by"></i></td>
+    </tr></table>
 </div>
 
 <div id="logo">

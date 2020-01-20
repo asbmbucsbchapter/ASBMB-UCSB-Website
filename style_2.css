@@ -1,5 +1,3 @@
-
-
 html, body {
 	height: 100%;
 	overflow: hidden;
@@ -53,7 +51,7 @@ body {
     position: fixed;
 	height: 5.75%;
 	top: 1.35%;
-	left: 9.0%;
+	left: 13.0%;
 	items-align: center;
 	vertical-align: center;
 }
@@ -68,15 +66,15 @@ td#icon {
 /*	hsl(203, 99%, 35%)*/
 #links {
     position: fixed;
-	width: 87.5%;
-	height: 2.75%;
+	width: 85.75%;
+	height: 3.5%;
 	margin: 0.5%;
 	color:  hsla(1, 0%, 100%, 1);
-	background-color: hsla(1, 0%, 89%, 1);
-	top: 2%;
-	left: 4.75%;
+	background-color: hsla(1, 0%, 89%, 0);
+	top: 1.5%;
+	left: 6%;
 	float: center;
-	text-align: right;
+	text-align: left;
 	overflow: hidden;
 	font-weight: normal;
 }
@@ -309,13 +307,10 @@ a#button {
 
 .member-overlay {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 90%;
-  width: 91%;
-  padding: 5%;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
   opacity: 0;
   transition: .5s ease;
   background-color: hsla(1, 0%, 90%, 0.9);
@@ -328,18 +323,21 @@ a#button {
 .member-text {
   color: hsla(1, 0%, 10%, 1);
   background-color: hsla(1, 0%, 100%, 0);
-  font-size: 7pt;
+  font-size: 9pt;
   position: absolute;
-  width: 85%;
-  height: 85%;
+  width: 75%;
+  height: 75%;
   float: center;
-  top: 15%;
-  left: 15%;
+  top: 12.5%;
+  left: 12.5%;
   padding: 4.5%;
   -webkit-transform: translate(-10%, -10%);
   -ms-transform: translate(-10%, -10%);
   transform: translate(-10%, -10%);
   text-align: left;
+  vertical-align: center;
+  objects-align: center;
+  text-transform: uppercase;
   overflow: auto;
 }
 
