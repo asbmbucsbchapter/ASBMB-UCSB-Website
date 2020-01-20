@@ -19,6 +19,27 @@
 	<link href="https://use.fontawesome.com/releases/v5.0.7/css/solid.css" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.7/js/solid.js" rel="stylesheet">
 	<script src="https://use.edgefonts.net/source-sans-pro:n4,i4,n6.js"></script>
+    <script type="text/javascript">
+            var picPaths = ['Images/Agilent_Banner.png','Images/SciTrek_Volunteers.png', 'Images/ASBMB_Meeting.png'];
+            var curPic = -1;
+            //preload the images for smooth animation
+            var imgO = new Array();
+            for(i=0; i < picPaths.length; i++) {
+                imgO[i] = new Image();
+                imgO[i].src = picPaths[i];
+            }
+
+            function swapImage() {
+                curPic = (++curPic > picPaths.length-1)? 0 : curPic;
+                imgCont.src = imgO[curPic].src;
+                setTimeout(swapImage,10000);
+            }
+
+            window.onload=function() {
+                imgCont = document.getElementById('Banner');
+                swapImage();
+            }
+    </script>
 
 </head>
 
@@ -55,7 +76,7 @@
 
 <div id="container-r">
     <div id="nav-3">
-        <img src="Images/SciTrek_Volunteers.png" title="Nice" width="87.5%">
+        <img id="Banner" src="" alt="" width="87.5%">
         <iframe src="https://calendar.google.com/calendar/b/3/embed?height=350&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;src=YXNibWJ1Y3NiY2hhcHRlckBnbWFpbC5jb20&amp;color=%23A87070&amp;showNav=0&amp;showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0" style="border-width:0" width="350" height="350" frameborder="0" scrolling="no"></iframe>
     </div>
 </div>
