@@ -1,4 +1,7 @@
-
+html {
+  --scrollbarBG: #CFD8DC;
+  --thumbBG: #90A4AE;
+}
 
 html, body {
 	height: 100%;
@@ -8,124 +11,9 @@ html, body {
     font-weight: normal;
 }
 
-body {
-	background-image: url("Images/UCSB-Campus.jpg");
-        background-repeat:no-repeat;
-       background-size:cover;
-}
-
-#logo {
-    position: absolute;
-	width: 49%;
-	padding: 0.5%;
-	background-color: hsla(1, 0%, 100%, 0.6);
-    border-radius: 15px;
-	top: 25%;
-	left: 25%;
-	float: center;
-	items-align: center;
-	overflow: hidden;
-	font-weight: normal;
-}
-
-#links {
-    position: fixed;
-	width: 49%;
-	height: 4.5%;
-	margin: 0.5%;
-	color:  hsla(1, 0%, 100%, 1);
-	background-color: hsla(1, 0%, 0%, 0);
-	top: 34.5%;
-	left: 25%;
-	float: center;
+#content {
+	height: 100%;
 	text-align: left;
-	overflow: hidden;
-	font-weight: normal;
-}
-
-a#button {
-    position: relative;
-    width: 20%;
-    color:  hsla(1, 0%, 100%, 1);
-    background-color: hsla(1, 0%, 0%, 1);
-    border-radius: 5px;
-    padding: 5px;
-    text-decoration: none;
-    font-weight: normal;
-    font-size: 8pt;
-}
-
-#image {
-    position: absolute;
-	height: 20%;
-	padding: 0.5%;
-	color:  hsla(1, 0%, 100%, 0);
-	background-color: hsla(1, 0%, 0%, 0);
-	float: right;
-	right: 24%;
-	bottom: 18%;
-	items-align: center;
-	overflow: hidden;
-	font-weight: normal;
-}
-
-#container {
-    position: relative;
-	width: 49%;
-	height: 35%;
-	padding: 0.5%;
-	background-color: hsla(1, 0%, 100%, 1);
-    border-radius: 15px;
-	top: 37.5%;
-	left: 25%;
-	float: center;
-	items-align: center;
-	overflow: hidden;
-	font-weight: normal;
-}
-
-
-#calendar {
-    position: relative;
-    padding: 0.5%;
-    background-color: hsla(1, 0%, 100%, 0.6);
-    border-radius: 15px;
-    float: right;
-    text-align: center;
-    vertical-align: center;
-    top: 0.5%;
-    right: 0.5%;
-    width: 34%;
-    overflow: hidden;
-}
-
-#nav {
-    position: relative;
-    padding: 0.5%;
-    width: 64%;
-    background-color: hsla(1, 0%, 100%, 0.6);
-    border-radius: 15px;
-    float: left;
-    text-align: center;
-    vertical-align: center;
-    top: 0.5%;
-    left: 0.5%;
-    overflow: hidden;
-}
-
-#abt {
-    position: relative;
-    padding: 0.5%;
-    width: 79%;
-    height: 89%;
-    text-align: left;
-    font-size: 7pt;
-    font-weight: normal;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 2.5%;
-    margin-bottom: 5%;
-    overflow: hidden;
 }
 
 #sidebar-border-l {
@@ -195,6 +83,18 @@ a#button {
     margin: 0%;
 	font-weight: normal;
 	border: 0.5% solid black;
+}
+
+#copyright {
+    position: fixed;
+    bottom: 2.5%;
+    right: 1.5%;
+    width: 15%;
+    text-align: right;
+    font-weight: bold;
+	border: 0px solid black;
+	padding: 2px;
+	font-size: 5pt;
 }
 
 #contents {
