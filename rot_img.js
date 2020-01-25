@@ -37,5 +37,5 @@ function rotate() {
      }
      document.getElementById("imgBanner").src = imgSrc[banner];
 
-     setTimeout(rotate, 1000 * 1000);
+     setTimeout(rotate, 3 * 1000);
 }
