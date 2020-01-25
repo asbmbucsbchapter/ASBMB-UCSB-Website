@@ -1,0 +1,273 @@
+html {
+  --scrollbarBG: #CFD8DC;
+  --thumbBG: #90A4AE;
+}
+
+html, body {
+	height: 100%;
+	overflow: hidden;
+	margin: 0;
+	font-family: "Arial", sans-serif;
+    font-weight: normal;
+}
+
+#content {
+	height: 100%;
+	text-align: left;
+}
+
+#sidebar-border-l {
+    position: fixed;
+	background: black;
+	float: left;
+	height: 100%;
+	top: 0%;
+	left: 0%;
+	width: 2%;
+	overflow: hidden;
+	font-weight: normal;
+}
+
+#sidebar-border-r {
+    position: fixed;
+	background: black;
+	float: left;
+	height: 100%;
+	top: 0%;
+	left: 14.5%;
+	width: 2%;
+	overflow: hidden;
+	font-weight: normal;
+}
+
+#topper-l {
+	position: fixed;
+	color: white;
+	background: black;
+	float: left;
+	height: 30%;
+	top: 0%;
+	left: 2%;
+	width: 12.5%;
+	overflow: hidden;
+	margin: 0%;
+	font-weight: normal;
+	border: 0.5% solid black;
+}
+
+#topper-c {
+	position: fixed;
+	color: white;
+	background: black;
+	float: left;
+	height: 15%;
+	top: 30%;
+	left: 2%;
+	width: 12.5%;
+	overflow: hidden;
+	margin: 0%;
+	font-weight: normal;
+	border: 0.5% solid black;
+}
+
+#topper-r {
+	position: fixed;
+	color: white;
+	background: black;
+	float: left;
+	height: 56%;
+	top: 44%;
+	left: 2%;
+	width: 12.5%;
+	overflow: hidden;
+    margin: 0%;
+	font-weight: normal;
+	border: 0.5% solid black;
+}
+
+#copyright {
+    position: fixed;
+    bottom: 2.5%;
+    right: 1.5%;
+    width: 15%;
+    text-align: right;
+    font-weight: bold;
+	border: 0px solid black;
+	padding: 2px;
+	font-size: 5pt;
+}
+
+#contents {
+	position: fixed;
+	float: left;
+	left: 17%;
+	height: 103%;
+	width: 84%;
+	overflow-y: auto;
+	overflow-x: hidden;
+	top: 0%;
+}
+
+#left {
+	position: relative;
+	float: left;
+	width: 12.5%;
+	left: 2.5%;
+	top: -3.5%;
+	height: 100%;
+	padding: 5px;
+}
+
+#center {
+	position: relative;
+	float: left;
+	width: 55%;
+	height: 100%;
+	padding: 5px;
+}
+
+#right {
+	position: relative;
+	float: right;
+	right: 10%;
+	width: 15%;
+	height: 100%;
+	padding: 5px;
+}
+
+#bottom-l {
+	position: absolute;
+	float: left;
+	left: 1.5%;
+	width: 15%;
+	bottom: 50px;
+}
+
+#education {
+	float: left;
+	text-align: left;
+	font-size: 9pt;
+	font-weight: normal;
+	width: 99%;
+	border-left: 0px solid #d3d3d3;
+	margin-left: 20px;
+	padding-left: 5px;
+	top: -10px;
+}
+
+table#contact-info {
+	color: black;
+	background: black;
+	float: center;
+	height: 0.5%;
+	margin-top: 1.55%;
+	padding: 5px 5px 5px 5px;
+	border-collapse: collapse;
+	font-size: 8pt;
+	font-weight: normal;
+	text-align: center;
+	position: absolute:
+}
+
+tr#contact-info {
+	color: black;
+	background: black;
+	height: 0.025%;
+	padding: 5px 5px 5px 5px;
+	border-collapse: collapse;
+	font-size: 8pt;
+	font-weight: normal;
+}
+
+td#contact-info {
+	color: white;
+	background: black;
+	border-collapse: collapse;
+	padding: 5px 5px 5px 5px;
+	font-size: 8pt;
+	font-weight: normal;
+	text-align: left;
+	word-spacing: 1em;
+}
+
+h1#tit {
+	color: white;
+	background: black;
+	float: left;
+	text-align: left;
+	font-size: 17pt;
+	text-transform: uppercase;
+}
+
+h3#tit {
+	color: black;
+	float: left;
+	text-align: left;
+	font-size: 13pt;
+	text-transform: uppercase;
+}
+
+a#icon {
+	color: white;
+	background: black;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+a#icon:hover {
+	color: #d3d3d3;
+}
+
+
+
+caption#contact-info {
+	caption-side: top;
+	text-align: left;
+	width: 20%;
+}
+
+table#headrow {
+	border-collapse: collapse;
+	width: 99%;
+	align: left;
+	padding: 5px 5px 5px 5px;
+	font-size: 9pt;
+	text-align: left;
+	font-weight: normal;
+}
+
+a#link {
+	color: black;
+	background: white;
+	text-decoration: none;
+	border-bottom: 1px dotted black;
+}
+
+td#r{
+	color: black;
+	text-align: right;
+}
+
+
+img#icon {
+  border-radius: 5px;
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  position: absolute;
+  display: inline-block;
+}
+
+td#icon {
+	color: black;
+	float: left;
+	background: white;
+	text-align: left;
+	width: 19%;
+}
+
+a#r {
+	text-align: right;
+	float: right;
+}
